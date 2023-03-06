@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import { Counter } from './components/counter/Counter';
 
 function App() {
   return (
@@ -20,7 +20,9 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            React
+
+            React        
+
           </a>
           <span>, </span>
           <a

@@ -6,5 +6,4 @@ const store = configureStore({
     counter:counterSlice,
   }
 })
-
 export default store

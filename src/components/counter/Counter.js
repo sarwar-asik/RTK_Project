@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import {
-  decrement,
-  increment,
-} from '../../features/counter/counterSlice.js';
+import {decrement,increment} from '../../features/counter/counterSlice.js';
 import styles from './Counter.module.css';
 
 export function Counter() {
@@ -22,7 +19,7 @@ export function Counter() {
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
-          - 
+           —
         </button>
         <span className={`min-w-[85px] ${styles.value}`}>{count}</span>
         <button

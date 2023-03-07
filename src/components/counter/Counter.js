@@ -7,9 +7,10 @@ export function Counter() {
 
   const count = useSelector(state => state.counter.count);
   const dispatch = useDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
 
-  const incrementValue = Number(incrementAmount) || 0;
+  // const [incrementAmount, setIncrementAmount] = useState('2');
+
+  // const incrementValue = Number(incrementAmount) || 0;
 
   return (
     <div>
@@ -31,12 +32,12 @@ export function Counter() {
         </button>
       </div>
       <div className={styles.row}>
-        <input
+        {/* <input
           className={styles.textbox}
           aria-label="Set increment amount"
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
-        />
+        /> */}
         {/* <button
           className={styles.button}
           onClick={() => dispatch(incrementByAmount(incrementValue))}
